@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Buat Ayang</title>
+  <!-- Vendor CSS Files -->  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="https://nyaman.sweetstory.repl.co/style.css" rel="stylesheet" type="text/css">
+  <!-- Jquery Min JS Script -->  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- TypeIt JS -->
+  <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
+
+ <!-- Preloader Script -->  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
+$(window).load(function() {
+    $(".preloader").fadeOut("slow");
+});
+</script>  
+</head>
+
+<body>
+		
+<!-- Preloader -->
+<div class="preloader">
+  <div class="loading">
+  <img src="https://i.postimg.cc/KZ4CZLd4/ad2bae-6679500d41af43ebae7f9f337e71f668-mv2.gif" style="height:250px;" />
+  <p>Bentar yaa.. Kalo lama mungkin sinyalnya</p>
+    
+  </div>
+</div>
+
+<div class="background"></div>
+
+<!-- Button trigger modal -->
+<div class="konten">
+		<div class="klik animated fadeIn slow delay-1s">
+				Tekan lovenya :)
+ 				<a class="center" data-bs-toggle="modal" href="#modal1" role="button">
+ 						<h1>♥️</h1>
+ 				</a>
+ 		</div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal animated zoomIn" id="modal1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"> 
+		<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">						
+								<span type="button" class="close" data-bs-dismiss="modal" aria-label="Close">+</span> 
+						<div class="modal-body"> 						
+								<img src="https://i.postimg.cc/C07Zp7PN/sticker-14.gif?dl=1" />
+								<h1>Nama kamu</h1>
+								<p></p>
+								<form action="javascript:void(0);" method="post" id="form">
+								<input type="text" id="inputnama" class="lebar" placeholder="Tulis nama dulu..." required autofocus >
+								<button class="button lebar" data-bs-target="#modal2" data-bs-toggle="modal">Lanjut</button>
+						</div> 								 
+				</div> 
+		</div> 
+</div> 
+
+<!-- Script for input name -->
+<script>
+		$('#form').submit(function(e) {
+  $('#nama, #nama1').text($("#inputnama").val());
+
+  // Prevent reload page
+  e.preventDefault();
+});
+</script>
+
+<!-- Modal 2 -->
+<div class="modal animated zoomIn" id="modal2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"> 
+		<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">						
+								<span type="button" class="close" data-bs-dismiss="modal" aria-label="Close">+</span> 
+						<div class="modal-body"> 						
+								<img src="https://i.postimg.cc/wqjjBKfk/sticker-18.gif?dl=1" />
+								<h1>Hai <span id="nama">kamu</span> :)</h1>
+								<p><span id="nama1">Kamu</span> sayang nggak sama aku ? </p>
+								<div class="buttoninline">
+								<button class="button" data-bs-target="#modalno" data-bs-toggle="modal">Nggak</button>
+								<button class="button" data-bs-target="#modalyes" data-bs-toggle="modal">Sayang</button>
+								</div>
+						</div> 								 
+				</div> 
+		</div> 
+</div> 
+
+<!-- Modal no -->
+<div class="modal animated swing" id="modalno" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"> 
+		<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">						
+								<span type="button" class="close" data-bs-dismiss="modal" aria-label="Close">+</span> 
+						<div class="modal-body"> 						
+								<img src="https://i.postimg.cc/mR0BvFsj/sticker-25.gif?dl=1" />
+								<h1>Yahhh ;(</h1>
+								<p>Nggak boleh, harus jawab sayang !</p>
+								<button class="button" data-bs-target="#modal2" data-bs-toggle="modal">Balik</button>
+						</div> 								 
+				</div> 
+		</div> 
+</div> 
+
+<!-- Modal Yes -->
+<div class="modal animated zoomIn" id="modalyes" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"> 
+		<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">						
+								<span type="button" class="close" data-bs-dismiss="modal" aria-label="Close">+</span> 
+						<div class="modal-body"> 						
+								<img src="https://i.postimg.cc/NgJwpKD1/sticker-7.gif?dl=1" />
+								<h1>Makasihh</h1>
+								<p></p>
+								<a href="#konten1" id="player" onclick="javascript:toggleSound();">
+										<span class="button" type="button" data-bs-target="" data-bs-dismiss="modal" aria-label="Close">Klik yaa</span>
+								</a>
+						</div> 								 
+				</div> 
+		</div> 
+</div> 
+
+<!-- Teks Akhir -->
+<div class="konten" id="konten1" style="place-items: start center; padding-top:200px;">
+		<div class="kotakht" data-aos="fade-in" data-aos-duration="6000"">
+		  	<span class="multipleStrings"></span>
+					<script>
+		new TypeIt(".multipleStrings", { strings: ["Sebosan apapun kita chating, sejauh apapun jarak. Aku cuma minta", "Jangan pernah mencari kebahagiaan dan kenyamanan sama orang baru", "Karena aku udah nyaman banget sama kmu.. :)"], speed: 120, waitUntilVisible: true, }).go();
+				 </script>
+		</div>
+		<!-- Music Background -->
+		<div class="playerfloat animated fadeIn">
+				<div id="player" class="player" onclick="javascript:toggleSound();">
+				</div>
+						<audio id="audio" type="audio/mpeg" control src="https://audio.sweetstory.repl.co/cukupkaudisampingku.mp3" ></audio>				
+		</div>
+</div>
+
+  				<!-------- ADDITIONAL JAVASCRIPT -------->
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+				AOS.init({
+  duration: 400,
+  delay: 100,
+})
+  </script>
+		
+<!-- Music Player -->
+		<script type="text/javascript">
+function toggleSound() {
+  var audioElem = document.getElementById('audio');
+  if (audioElem.paused)
+    audioElem.play();
+  else
+    audioElem.pause();
+}
+		</script>
+</body
+</html>
